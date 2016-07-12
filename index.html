@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title>vue 2do</title>
+	</head>
+
+	<body id="app">
+		<div>
+			<h3>vue 2do</h3>
+		
+			<form>
+				<input type="text"
+					   v-model="message" />
+					   
+			    <button type="button"
+						v-on:click="add(message)">
+							add
+				</button>
+			</form>
+			
+			<div>
+				<ul>
+					<li v-for="todo in todos" v-on:click="remove(todo.id)">
+						{{todo.msg}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	
+		<script src="node_modules/vue/dist/vue.min.js"></script>
+		<script src="./todo.js"></script>
+	</body>
+</html>
