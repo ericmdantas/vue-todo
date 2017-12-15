@@ -27,7 +27,7 @@
 		template: `
 		<div>
 			<h3>vue 2do</h3>
-		
+
 			<form @submit.prevent="add(message)">
 				<input type="text"
 					   v-model="message" />
@@ -38,7 +38,7 @@
 							add
 				</button>
 			</form>
-			
+
 			<div>
 				<ul>
 					<li v-for="todo in todos" @click="remove(todo.id)" style="cursor: pointer;">
@@ -52,5 +52,5 @@
 
 	new Vue({
 		el: "#app"
-	}); 
-}(Vue));
+	});
+}(window.Vue));

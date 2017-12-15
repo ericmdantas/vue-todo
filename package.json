@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ericmdantas/vue-todo#readme",
   "dependencies": {
-    "vue": "^2.0.1"
+    "vue": "^2.5.11"
   },
   "devDependencies": {
     "aliv": "^1.1.5"
